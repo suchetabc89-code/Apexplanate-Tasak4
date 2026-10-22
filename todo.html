@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Sucheta Mukhopadhyay | To-Do</title>
+
+    <link rel="stylesheet" href="task4.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Sucheta Website
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a
+                    href="todo.html"
+                    class="active">
+
+                    To-Do
+
+                </a>
+
+                <a href="products.html">
+                    Products
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section class="page-header">
+
+            <p>
+                TASK MANAGEMENT
+            </p>
+
+            <h1>
+                To-Do / Notes App
+            </h1>
+
+            <span>
+                Tasks are saved using browser localStorage
+            </span>
+
+        </section>
+
+
+
+        <!-- ================================
+             TODO APPLICATION
+        ================================= -->
+
+        <section class="todo-page-section">
+
+
+            <div class="todo-container">
+
+
+                <h2>
+                    My Tasks
+                </h2>
+
+
+                <p class="todo-description">
+
+                    Add your tasks or notes below.
+                    Completed tasks can be marked and
+                    deleted when no longer required.
+
+                </p>
+
+
+
+                <!-- INPUT -->
+
+                <div class="todo-input-area">
+
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Enter a new task or note">
+
+
+                    <button id="addTask">
+                        Add Task
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- TASK INFORMATION -->
+
+                <div class="todo-info">
+
+
+                    <span id="taskCount">
+                        0 tasks
+                    </span>
+
+
+                    <button id="clearTasks">
+                        Clear All
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- TASK LIST -->
+
+                <ul id="taskList"></ul>
+
+
+                <p id="emptyMessage">
+
+                    No tasks available.
+                    Add your first task!
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================================
+             INFORMATION
+        ================================= -->
+
+        <section class="section local-info">
+
+
+            <div class="section-title">
+
+                <p>
+                    LOCAL STORAGE
+                </p>
+
+                <h2>
+                    How It Works
+                </h2>
+
+            </div>
+
+
+            <div class="info-grid">
+
+
+                <div>
+
+                    <h3>
+                        Add
+                    </h3>
+
+                    <p>
+                        Enter a task and click
+                        the Add Task button.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Save
+                    </h3>
+
+                    <p>
+                        JavaScript saves the tasks
+                        inside browser localStorage.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Retrieve
+                    </h3>
+
+                    <p>
+                        Previously saved tasks are
+                        automatically loaded when
+                        the page is opened again.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 Sucheta Mukhopadhyay |
+            HTML • CSS • JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="task4.js"></script>
+
+</body>
+
+</html>

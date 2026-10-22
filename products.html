@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Sucheta Mukhopadhyay | Products</title>
+
+    <link rel="stylesheet" href="task4.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Sucheta Website
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="todo.html">
+                    To-Do
+                </a>
+
+                <a
+                    href="products.html"
+                    class="active">
+
+                    Products
+
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+        <section class="page-header">
+
+            <p>
+                PRODUCT CATALOG
+            </p>
+
+            <h1>
+                Electronics Product Listing
+            </h1>
+
+            <span>
+                Filter and sort products dynamically
+            </span>
+
+        </section>
+
+
+
+        <!-- ================================
+             FILTER
+        ================================= -->
+
+        <section class="section product-section">
+
+
+            <div class="filter-box">
+
+
+                <!-- CATEGORY -->
+
+                <div class="filter-group">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="electronics">
+                            Electronics
+                        </option>
+
+                        <option value="robotics">
+                            Robotics
+                        </option>
+
+                        <option value="components">
+                            Components
+                        </option>
+
+                        <option value="tools">
+                            Tools
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- PRICE -->
+
+                <div class="filter-group">
+
+                    <label for="priceFilter">
+                        Maximum Price
+                    </label>
+
+
+                    <select id="priceFilter">
+
+                        <option value="all">
+                            All Prices
+                        </option>
+
+                        <option value="500">
+                            Under ₹500
+                        </option>
+
+                        <option value="1000">
+                            Under ₹1000
+                        </option>
+
+                        <option value="2000">
+                            Under ₹2000
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- SORT -->
+
+                <div class="filter-group">
+
+                    <label for="sortFilter">
+                        Sort By
+                    </label>
+
+
+                    <select id="sortFilter">
+
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                        <option value="rating">
+                            Rating
+                        </option>
+
+                        <option value="name">
+                            Name
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- RESET -->
+
+                <button id="resetFilter">
+                    Reset
+                </button>
+
+
+            </div>
+
+
+
+            <!-- ================================
+                 PRODUCT GRID
+            ================================= -->
+
+            <div
+                id="productGrid"
+                class="product-grid">
+
+            </div>
+
+
+            <p
+                id="noProducts"
+                class="no-products">
+
+                No products found.
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <footer>
+
+        <p>
+            © 2026 Sucheta Mukhopadhyay |
+            HTML • CSS • JavaScript
+        </p>
+
+    </footer>
+
+
+    <script src="task4.js"></script>
+
+</body>
+
+</html>
